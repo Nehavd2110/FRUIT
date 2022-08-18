@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="popper.js"></script>
+	<script type="text/javascript" src="bootstrap.js"></script>	
+	<link rel="stylesheet" type="text/css" href="Master.css">
+	
+	<style>
+	#zoom:hover{
+		width:300px;
+		height:auto;
+	}
+	
+	
+	select, option {
+    width: 200px;
+	
+}
+
+option {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</style>
+</head>
+<body style="background-color:black">
+<header style="background-color:black">
+	<div class="container" style="background-color:black">
+		<div class="row" >
+			<div class="col-5 col-sm-5 col-md-6 col-lg-6 col-xl-6">
+				<a href="home.html"><img src="D:\neha\projects\fruits and vegetables\images\logo.jpg"class="img-fluid mx-auto" height="70" width="170" style="padding:10px"></a>
+			</div>
+			
+			<div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6">
+					<form class="form-inline" style="margin-top: 35px; margin-left: 60px;">
+						<div class="input-group">
+							<input class="form-control mr-sm-2" type="text" placeholder="Search....">
+							<button class="btn btn-dark" type="submit">Q</button>
+						</div>
+					</form>
+			</div>
+		</div>
+	</div>
+</header>
+
+	<nav class="navbar navbar-expand-md bg-light navbar-dark sticky-top" style="border:3px solid #B87333; ">
+		<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+	    		<span class="navbar-toggler-icon"></span>
+	  		</button>
+	  		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav mx-auto">
+					<li class="nav-item " ><a class="nav-link"  href="D:\neha\projects\fruits and vegetables\index.html" style="width: 110px; text-align: center; color: #FF4500;">HOME</a></li>
+					<li class="nav-item " ><a class="nav-link"  href="D:\neha\projects\fruits and vegetables\ABOUTME.html" style="width: 110px; text-align: center; color: skyblue;">ABOUT ME</a></li>
+					<li class="nav-item" ><a class="nav-link"  href="D:\neha\projects\fruits and vegetables\FRUITS.html" style="width: 110px; text-align: center; color: orange;">FRUITS</a></li>
+					<li class="nav-item" ><a class="nav-link"  href="D:\neha\projects\fruits and vegetables\IMPORT.html" style="width: 110px; text-align: center; color: green;">IMPORT</a></li>
+					<li class="nav-item" ><a class="nav-link"  href="D:\neha\projects\fruits and vegetables\EXPORT.html" style="width: 110px; text-align: center; color: darkred;">EXPORT</a></li>
+					<li class="nav-item active" style="border-bottom: 5px solid #77b300; font-size: 17px;"><a class="nav-link"  href="D:\neha\projects\fruits and vegetables\CONTACT US.html" style=" width: 110px; text-align: center; color: #77b300;">CONTACTUS</a></li>
+
+				</ul>
+			</div>	
+		</div>
+</nav>
+
+
+
+<div class="form" style="padding-left:100px; padding-bottom:100px;padding-right:100px; padding-top:100px; ">
+
+
+
+<div class="contact" style="border:3px solid  #B87333; border-radius: 20px;">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<h3 style="text-align: center; padding-top: 15px; color:#B87333;font-size:25px">CONTACT WITH US FOR MORE DETAILS</h3><br>
+					</div><br><br>
+
+					<div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 mx-auto">
+						<form class="form-inline"  name="form1" class="frm_message" method="post" autocomplete="off" onsubmit="return Reg()" style="padding-bottom: 20px;">
+							<div class="form-group">
+						      	<label for="Fname" style="color:#B87333;font-size:25px;font-weight:bold">FIRST NAME:  &nbsp;&nbsp;</label>
+						      	<input type="text" class="form-control" id="Fname" placeholder="Enter First Name" name="Fname" required=""><span id="Fnamemsg"></span>
+						    </div>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+						    <div class="form-group">
+						      	<label for="Lname"  style="color:#B87333;font-size:25px;font-weight:bold">LAST NAME: &nbsp;&nbsp;</label>
+						      	<input type="text" class="form-control" id="Lname" placeholder="Enter Last Name" name="Lname" required=""><span id="Lnamemsg" required=""></span>
+						    </div><br><br><br><br><br><br>
+
+						    <div class="form-group">
+						     	<label for="Cnumber"  style="color:#B87333;font-size:25px;font-weight:bold">MOBILE NO: &nbsp;</label>
+						      	<input type="number" class="form-control" id="Cnumber" placeholder="Enter Contact No" name="Cnumber" required=""> <span id="mobilemsg"></span>
+						    </div>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+						    <div class="form-group">
+						      	<label for="email"  style="color:#B87333;font-size:25px;font-weight:bold">EMAIL: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+						      	<input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" required=""> <span id="emailmsg"></span>
+						    </div><br><br><br><br><br><br>
+
+						    <div class="form-group">
+						    
+						      <label for="imex" style="color:#B87333; font-size:25px;font-weight:bold">DO YOU </BR>WANT IMPORT</BR> OR EXPORT?:</label>&nbsp;
+								<select id="country" name="country">
+								<option value="IMPORT">IMPORT</option>
+								<option value="EXPORT">EXPORT</option>
+								</select>
+								</span>
+						    </div>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+						   
+				
+						   <div class="form-check">
+						    	<label  style="color:#B87333;font-size:25px;font-weight:bold">GENDER: &nbsp</label>
+							  	<label style="font-weight: normal; color:#B87333; font-size: 17px; font-size:25px" class="form-check-label">
+							    <input type="radio" class="form-check-input" name="gender">MALE
+							  	</label>&nbsp;&nbsp;&nbsp;
+							
+							  	<label style="font-weight: normal; color:#B87333; font-size: 17px; font-size:25px" class="form-check-label">
+							    <input type="radio" class="form-check-input" name="gender"  >FEMALE
+							  	</label><span id="gendermsg"></span>
+							</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR><BR><BR><BR><BR><BR><BR><BR>
+
+
+
+
+
+							<div class="form-group">
+						    
+						      <label for="imex" style="color:#B87333; font-size:25px;font-weight:bold">HOW MUCH KG<BR> DO YOU WANT <BR>TO IMPORT/EXPORT:</label>
+								<select name="fruits" id="fruits">
+								<option value="250 kg">250 kg</option>
+									<option value="500 kg ">500 kg </option>
+									<option value="1 TONNE(1000kg)">1 TONNE(1000kg)</option>
+									<option value="2 TONNE">2 TONNE</option>
+								<option value="3 TONNE">3 TONNE</option>
+								</select>
+								</span>
+								</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+						<div class="form-group">
+						    
+						      <label for="imex" style="color:#B87333; font-size:25px; font-weight:bold">SELECT <BR>FRUIT NAME:</label>
+								<select name="fruits" id="fruits">
+  <option value="DRAGON FRUIT">DRAGON FRUIT</option>
+  <option value="ORANGE FRUIT">ORANGE FRUIT</option>
+  <option value="CUSTARD FRUIT">CUSTARD FRUIT</option>
+  <option value="KIWI FRUIT">KIWI FRUIT</option>
+    <option value="MANGO FRUIT">MANGO FRUIT</option>
+  <option value="POMOGRANATE FRUIT">POMOGRANATE FRUIT</option>
+  <option value="BLUEBERRY FRUIT">BLUEBERRY FRUIT</option>
+  <option value="APPLE FRUIT">APPLE FRUIT</option>
+    <option value="FIGS FRUIT">FIGS FRUIT</option>
+  <option value="AVOCADO FRUIT">AVOCADO FRUIT</option>
+    <option value="CHERRT FRUIT">CHERRY FRUIT</option>
+  <option value="WATERMELON FRUIT">WATERMELON FRUIT</option>
+</select>
+</span>
+
+</div>
+
+
+
+<BR><BR><BR><BR><BR><BR><BR><BR>
+
+
+
+
+
+
+							
+<br><br><br>
+						<input style="font-size: 18px; width: 120px; background: black;margin:auto;"  type="submit" name="" value="SUBMIT" class="btn btn-primary">		
+						    <input style="font-size: 18px; width: 120px; margin:auto;" type="Reset" name="" value="RESET" class="btn btn-danger">
+						</form>
+					</div>
+				</div>		
+			</div>
+</div>
+
+
+
+	
+	
+		<footer  style="border:2px solid #B87333; background-color:black">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<h4 style="color:#B87333;">@ 2022 FRESH FRUITS . All Copy Rights Reserved. </h4>
+			</div>
+		</div>
+		</footer>
+	
+	
+	
+	
+	
+	
+
+
+</body>
+</html>
